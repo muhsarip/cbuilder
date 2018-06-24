@@ -7,6 +7,12 @@ CBuilder is rapid tool for build application with codeigniter and other library 
   - Grocery crud
   - ION Auth
 
+### Features
+  - User Access management
+  - Menu Management
+  - Example CRUD Table for using grocery crud
+  
+
 ### Installation
 
 CBuilder requires standard enviroment for codeigniter / php application, min requirement :
