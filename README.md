@@ -31,6 +31,9 @@ Grocery crud :  [Grocery Crud Documentation](https://www.grocerycrud.com/documen
 
 ION Auth :  [ION Auth](http://benedmunds.com/ion_auth/)
 
+### Important Information
+Originally inspired from https://github.com/asrul10/myIgniter
+
 License
 ----
 
