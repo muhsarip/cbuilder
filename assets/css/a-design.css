@@ -1,0 +1,99 @@
+::-moz-selection {
+    color: #fff;
+    background: #424242;
+}
+::selection {
+    color: #fff; 
+    background: #424242;
+}
+.info{
+	margin-top: 14%;
+}
+.user-menu{
+  text-transform: capitalize;
+}
+.exspan-bottom{
+  padding-bottom: 150px;
+}
+/*FIX BUG GROCERY*/
+.small-loading{
+	padding-left:10px;
+	padding-top:1px;
+	display: none;
+}
+.report-div{
+ 	display:none;
+}
+.datepicker-input-clear{
+	cursor: pointer;
+}
+.tDiv2,
+.tDiv3{
+  margin: 0 0 10px;
+}
+.table-menu>li{
+  float: left;
+  position: relative;
+  display: block;
+  margin-left: 10px;
+}
+.td-action{
+  width: 20%;
+}
+.form-horizontal .control-label{
+  text-align: left;
+}
+.form-horizontal .radio{
+  float: left;
+}
+.form-horizontal .radio{
+  padding-top: 2px;
+}
+.pretty-radio-buttons>label{
+  text-transform: capitalize;
+  margin-right: 14px;
+}
+.datetime-input-clear, .field-sorting {
+  cursor: pointer;
+}
+.sort{
+  color: #b5bbc8;
+}
+/*PACE LOADING*/
+.cover{
+  position:fixed;
+  z-index:1999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background-color: #ecf0f5;
+}
+.img-splash{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 10%;
+  max-width: 200px;
+  max-height: 200px;
+}
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  z-index:2000;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: #fff ;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
