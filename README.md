@@ -9,7 +9,7 @@ CBuilder is rapid tool for build application with codeigniter and other library 
 
 ### Installation
 
-CBuilder requires standarD enviroment for codeigniter / php application, min requirement :
+CBuilder requires standard enviroment for codeigniter / php application, min requirement :
   - php 5.6
   - apache webserver
   - mysql
