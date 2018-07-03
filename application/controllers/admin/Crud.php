@@ -11,20 +11,13 @@ class Crud extends ADMIN_Controller {
  	
     public function index()
     {
-		if (!$this->ion_auth->is_admin())
-		{
-			return show_error('You must be an administrator to view this page.');
-		}
-		else
-		{
-			$output = (object)array('data' => '' , 'output' => '' , 'js_files' => null , 'css_files' => null);
-			
-			$data['judul'] = '';
+		$output = (object)array('data' => '' , 'output' => '' , 'js_files' => null , 'css_files' => null);
+		
+		$data['judul'] = '';
 
-			$template = 'admin_template';
-			$view = 'page/dashboard';
-			$this->outputview->output_admin($view, $template, $data, $output);
-		}
+		$template = 'admin_template';
+		$view = 'page/dashboard';
+		$this->outputview->output_admin($view, $template, $data, $output);
 	}
 
     //USERS MANAGEMENT

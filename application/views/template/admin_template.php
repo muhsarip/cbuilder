@@ -237,5 +237,6 @@
 <?php echo isset($scriptView) ? $scriptView : ''; ?>
 <!--Custom JS-->
 <script src="<?php echo base_url('assets/js/a-design.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/plugins/sortable/jquery-sortable.js') ?>" ></script>
 </body>
 </html>
