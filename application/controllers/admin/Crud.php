@@ -178,6 +178,45 @@ class Crud extends ADMIN_Controller {
 			return false;
 		}
 	}
+	function edit_user_callback($post_array, $primary_key) {
+
+		// Update group
+		if (isset($post_array['groups'])) {
+			$group = $post_array['groups'];
+			if (count($group) > 0) {
+				foreach ($group as $group_id) {
+					$this->ion_auth->add_to_group($group_id, $primary_key);
+				}
+			}
+			
+		}else{
+			//$this->ion_auth->remove_from_group(false, $primary_key);
+			return false;
+		}
+
+		$identity = $post_array[$this->config->item('identity', 'ion_auth')];
+		$old 	  = $post_array['old_password'];
+		$new 	  = $post_array['new_password'];
+		$data     = array(
+					'username'   => $post_array['username'],
+					'email'      => $post_array['email'],
+					'phone'      => $post_array['phone'],
+					'image'		 => $post_array['image']
+				);
+		//echo $identity."  ".$old."  ".$new;die();
+		if ($old != '') {
+
+			$change = $this->ion_auth->update($primary_key, $data) && $this->ion_auth->change_password($identity, $old, $new) ;
+		}else{
+			$change = $this->ion_auth->update($primary_key, $data) ;
+		};
+
+		if ($change) {
+			return true;
+		}else{
+			return false;
+		}
+	}
 
 	function edit_user_callback_personal($post_array, $primary_key) {
 
